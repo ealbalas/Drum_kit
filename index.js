@@ -56,52 +56,52 @@ function handleClick() {
     }
 
 function handleKeyClick(event) {
-    var buttonInnerHTML = event.key;
-    switch (buttonInnerHTML) {
+    var keyChar = event.key;
+    switch (keyChar) {
         case "w":
             var tom1 = new Audio('sounds/tom-1.mp3');
             tom1.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;
 
         case "a":
             var audio = new Audio('sounds/tom-2.mp3');
             audio.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;  
 
         case "s":
             var audio = new Audio('sounds/tom-3.mp3');
             audio.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;      
 
         case "d":
             var audio = new Audio('sounds/tom-4.mp3');
             audio.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;      
 
         case "j":
             var audio = new Audio('sounds/crash.mp3');
             audio.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;      
 
         case "k":
             var audio = new Audio('sounds/kick-bass.mp3');
             audio.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;      
 
         case "l":
             var audio = new Audio('sounds/snare.mp3');
             audio.play();
-            console.log(buttonInnerHTML);
+            console.log(keyChar);
             break;      
 
             default:
-                console.log(buttonInnerHTML);
+                console.log(keyChar);
                 break;
         }
     }
