@@ -1,4 +1,4 @@
-var btns = document.querySelectorAll(".drum");
+var btns = $(".drum");
 
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", handleClick);
