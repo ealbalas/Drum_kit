@@ -6,6 +6,7 @@ for (let i = 0; i < btns.length; i++) {
 
 function handleClick() {
     var buttonInnerHTML = this.innerHTML;
+    addAnimation(buttonInnerHTML);
     switch (buttonInnerHTML) {
         case "w":
             var tom1 = new Audio('sounds/tom-1.mp3');
@@ -57,6 +58,7 @@ function handleClick() {
 
 function handleKeyClick(event) {
     var keyChar = event.key;
+    addAnimation(keyChar);
     switch (keyChar) {
         case "w":
             var tom1 = new Audio('sounds/tom-1.mp3');
@@ -105,5 +107,13 @@ function handleKeyClick(event) {
                 break;
         }
     }
+
+function addAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 100);
+}
     
 document.addEventListener("keydown", handleKeyClick);
